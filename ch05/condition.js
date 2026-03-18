@@ -1,0 +1,13 @@
+if (true) {
+    console.log("무조건 실행되는 구문입니다.");
+}
+
+let num = 10;
+
+if (num > 10) {
+    console.log("입력값이 10보다 큼")
+} else if (num === 10) {
+    console.log("입력값이 10과 같음")
+} else {
+    console.log('입력값이 10보다 작음')
+}
