@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>합격확인</title>
+</head>
+
+<body>
+    <h2>합격확인</h2>
+    <input id="input_number" type="number" placeholder="점수입력">
+    <button id="btn" type="button">next</button>
+    <div id="temp"></div>
+</body>
+
+</html>
+<script>
+    document.getElementById("btn").onclick = function () {
+        const score = document.getElementById("input_number").value;
+
+        let temp = '';
+        switch (Math.trunc(score / 10)) {
+            case 10:
+                temp = "A";
+                break;
+            case 9:
+                temp = "A";
+                break;
+            case 8:
+                temp = "B";
+                break;
+            case 7:
+                temp = "C";
+                break;
+            case 6:
+                temp = "D";
+                break;
+            default:
+                temp = "F";
+                break;
+        }
+        document.getElementById("temp").textContent = temp;
+    }
+</script>
