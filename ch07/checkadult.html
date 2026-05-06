@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미성년자 판별</title>
+</head>
+
+<body>
+    <h1>미성년자 판별</h1>
+    <input id="input_age" type="number" value="17" />
+    <button id="btn_ok">다음</button>
+    <div id="result">당신은 18세 미만입니까?</div>
+</body>
+<script>
+    document.getElementById("btn_ok").onclick = function () {
+        let age = document.getElementById("input_age").value;
+        let result = null;
+        if (age >= 20) {
+            result = "성인";
+        } else {
+            result = "미성년자";
+        }
+        document.getElementById("result").textContent = result
+    }
+</script>
+
+</html>
